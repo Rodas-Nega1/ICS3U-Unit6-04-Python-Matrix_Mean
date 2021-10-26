@@ -35,7 +35,9 @@ def main():
         rows_int = int(rows)
         columns_int = int(columns)
 
-        if rows_int or columns_int < 0:
+        if rows_int < 0:
+            print("That is an invalid integer.")
+        elif columns_int < 0:
             print("That is an invalid integer.")
 
         else:
